@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/Users/gracemiller/Desktop/cs1300/res_redesign/redesign.css" />
+    <script src="https://kit.fontawesome.com/86a8d61395.js" crossorigin="anonymous"></script>
+    </head>
+
+
+<div class="header">
+  <h2>Marxists Internet Archive</h2>
+</div>
+
+<div class="row">
+  <div class="column side" style="background-color:#000000;">
+  <button class="side-button">
+    <img src="marx.jpeg" alt="Karl Marx">
+    <span>Marx-Engels Archive</span>
+  </button>
+
+  <button class="side-button">
+    <img src="lenin.jpeg" alt="Vladimir Lenin">
+    <span>Lenin Archive</span>
+  </button>
+
+  <button class="side-button">
+    <img src="luxemburg.jpeg" alt="Rosa Luxemburg">
+    <span>Luxemburg Archive</span>
+  </button>
+
+  </div>
+
+  <div class="column middle" style="background-color:#000000;">
+    <div class="button-container">
+      <button class="button">Selected Marxists</button>
+      <button class="button">FAQ</button>
+      <button class="button">Library</button>
+      <button class="button">About the Archive</button>
+      <button class="button">History</button>
+      <button class="button">What's New?</button>
+      <button class="button">Encyclopedia</button>
+      <button class="button">Cross-Language Index</button>
+
+      <div class="search-button-container">
+        <button class="search-button">Search</button>
+      </div>
+
+      <div class="dropdown-container">
+        <div class="dropdown">
+          <div class="dropdown-header">Select Author <i class="fas fa-chevron-down"></i></div>
+          <div class="dropdown-content">
+            <!-- Dropdown content -->
+            <ul>
+              <li>Author 1</li>
+              <li>Author 2</li>
+              <li>Author 3</li>
+            </ul>
+          </div>
+        </div>
+
+      
+        <div class="dropdown">
+          <div class="dropdown-header">Select Section <i class="fas fa-chevron-down"></i></div>
+          <div class="dropdown-content">
+            <!-- Dropdown content -->
+            <ul>
+              <li>Section 1</li>
+              <li>Section 2</li>
+              <li>Section 3</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="dropdown combined">
+          <div class="dropdown-header">Select Perodical <i class="fas fa-chevron-down"></i></div>
+          <div class="dropdown-content">
+            <!-- Combined dropdown content -->
+            <ul>
+              <li>Perodical 1</li>
+              <li>Periodical 2</li>
+              <li>Periodical 3</li>
+            </ul>
+          </div>
+        </div>
+
+        <script>
+          // Get all dropdown headers
+          const dropdownHeaders = document.querySelectorAll('.dropdown-header');
+      
+          // Add click event listeners to toggle dropdown content visibility
+          dropdownHeaders.forEach(header => {
+              header.addEventListener('click', () => {
+                  // Toggle the active class on the parent element of the clicked header
+                  header.parentNode.classList.toggle('active');
+              });
+          });
+      </script>
+
+
+    </div>
+  </div> <!-- removing this makes the side buttons on the right closer??-->
+  </div>
+  <div class="column side" style="background-color:#000000;">
+
+    <button class="side-button">
+      <img src="engels.jpeg" alt="Friedrich Engels">
+      <span>Marx-Engels Archive</span>
+    </button>
+  
+    <button class="side-button">
+      <img src="Trotsky.jpeg" alt="Leon Trotsky">
+      <span>Trotsky Archive</span>
+    </button>
+  
+    <button class="side-button">
+      <img src="guevara.jpeg" alt="Che Guevara">
+      <span>Guevara Archive</span>
+    </button>
+  </div>
+</div>
+
+</body>
+</html>
