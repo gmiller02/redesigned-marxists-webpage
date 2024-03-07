@@ -84,13 +84,13 @@
         </div>
 
         <script>
-          // Get all dropdown headers
+          
           const dropdownHeaders = document.querySelectorAll('.dropdown-header');
       
-          // Add click event listeners to toggle dropdown content visibility
+          // toggles dropdown
           dropdownHeaders.forEach(header => {
               header.addEventListener('click', () => {
-                  // Toggle the active class on the parent element of the clicked header
+                
                   header.parentNode.classList.toggle('active');
               });
           });
@@ -98,7 +98,7 @@
 
 
     </div>
-  </div> <!-- removing this makes the side buttons on the right closer??-->
+  </div> 
   </div>
   <div class="column side" style="background-color:#000000;">
 
